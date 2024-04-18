@@ -1,0 +1,107 @@
+body{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.heading{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 60vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 15%;
+}
+
+.content-1{
+    left: 5cqmax;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    margin-right: 0;
+    font-size: 4rem;
+}
+
+.content-2{
+    left: 5cqmax;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    margin-right: 0;
+    font-size: 4rem;
+}
+
+.heading h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    position: absolute;
+    margin-right: 0;
+}
+
+.heading h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.heading h2:nth-child(2){
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+
+@keyframes animate{
+    0% , 100% {
+        clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.pokemon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Loadmore{
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(315deg, #76daff 0%, #fcd000 74%);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
